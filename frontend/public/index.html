@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      /* 设置滚动条的样式 */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      /* 滚动槽 */
+      ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: #333;
+      }
+      /* 滚动条滑块 */
+      ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #444;
+      }
+
+      .workplace div {
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+  </body>
+</html>
